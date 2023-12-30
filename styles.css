@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1f1d1d;
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.top i,
+.top i::before {
+  font-weight: 900;
+  font-size: 40px;
+  color: #fff;
+  background-color: rgb(165, 42, 42);
+  padding: 6px;
+  border-radius: 20px;
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+@media (min-width: 576px) {
+  .nav-item {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+.navbar-custom {
+  background-color: rgba(165, 42, 42, 0.63);
+}
+
+.navbar-custom a {
+  font-weight: 600;
+}
+
+#home {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-image: url('bg_image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  #home {
+    height: 600px;
+  }
+}
+
+
+.text-content {
+  color: white;
+  padding: 20px;
+}
+
+.text-content h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.text-content h2 {
+  margin: 5px 0;
+  font-size: 2.5em;
+}
+
+#style-button {
+  font-size: 1.5em;
+  padding: 5px 5px;
+  border-radius: 50px;
+  background-color: brown;
+  opacity: 0.7;
+}
+
+#about img {
+  width: 100%;
+}
+
+.container .row {
+  border-bottom: #ffffff83 3px solid;
+}
+
+.cv-section {
+  background-color: #1f1d1d;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+#cv-pdf {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: brown;
+  opacity: 0.9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-heading {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.skills-list {
+  margin-bottom: 30px;
+}
+
+.skill-bar {
+  margin-bottom: 10px;
+}
+
+.skill-bar span {
+  display: block;
+  padding: 5px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.education,
+.experience {
+  padding: 20px;
+}
+
+.education .card,
+.experience .card {
+  background-color: #e0dddd;
+}
+
+.education li,
+.experience li {
+  padding-top: 5px;
+}
+
+#contact a {
+  color: #fff;
+  font-size: 35px;
+  padding: 5px;
+}
